@@ -6,13 +6,13 @@ export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
 
   function handleResponse(response) {
-    console.log(response);
+    console.log(response.data);
   }
 
   function search(event) {
     event.preventDefault();
     alert(`Searching for ${keyword}`);
-    let apiUrl = "https://api.dictionaryapi.dev/api/v2/entries/en/sunset";
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
     event.target.reset();
   }
