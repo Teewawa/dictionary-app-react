@@ -5,3 +5,8 @@
 .App-header h1 {
   text-align: center;
 }
+
+.App-footer {
+  text-align: center;
+  margin: 30px 0;
+}
