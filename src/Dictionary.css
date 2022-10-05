@@ -1,3 +1,7 @@
 .Dictionary {
-  background-color: rgb(203, 184, 151);
+  //background-color: rgb(203, 184, 151);
+}
+
+.Results h2 {
+  margin-top: 40px;
 }
