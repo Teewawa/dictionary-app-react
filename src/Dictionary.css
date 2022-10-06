@@ -2,7 +2,29 @@
   background-color: rgb(203, 184, 151);
   background-color: white;
 }
-
-.Results h2 {
+.Results {
+  border: 1px solid #20212433;
+  padding: 10px;
   margin-top: 40px;
+}
+
+.Results h3 {
+  color: rgba(196, 179, 146, 0.878);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.Meaning {
+  color: #202124;
+}
+.Examples {
+  color: #70757ad7;
+}
+
+.synonym-box {
+  background-color: rgba(196, 179, 146, 0.176);
+  border-radius: 10px;
+  padding: 1px 20px;
+  margin-right: 5px;
+  text-align: center;
 }
