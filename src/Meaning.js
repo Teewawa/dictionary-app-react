@@ -11,11 +11,9 @@ export default function Meaning(props) {
         if (index < 3) {
           return (
             <div key={index}>
-              <p>
-                {index + 1}. {definition.definition}
-                <Examples definition={definition} />
-                <Synonyms definition={definition} />
-              </p>
+              {index + 1}. {definition.definition}
+              <Examples definition={definition} />
+              <Synonyms definition={definition} />
             </div>
           );
         } else {
