@@ -1,0 +1,14 @@
+button {
+  all: unset;
+}
+.phonetic-audio-icon {
+  width: 20px;
+}
+
+.phonetic-audio-icon:hover {
+  filter: drop-shadow(2px 2px 2px rgb(31, 31, 31));
+}
+
+li {
+  line-height: 26px;
+}
