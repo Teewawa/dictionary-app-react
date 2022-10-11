@@ -14,6 +14,7 @@ export default function Phonetics(props) {
             <a
               href={props.phonetic.audio}
               target="_blank"
+              rel="noopener"
             >
               Listen
             </a>
