@@ -1,6 +1,14 @@
 import React from "react";
+import audioIcon from "./icons/audio-icon.png";
+import "./Phonetics.css";
 
 export default function Phonetics(props) {
+  let audio = new Audio("");
+
+  const start = () => {
+    audio.play();
+  };
+
   //either audio is empty or does not exist in the object (false)
   if (props.phonetic.audio === "" || "audio" in props.phonetic === false) {
     //return only the text
@@ -9,30 +17,39 @@ export default function Phonetics(props) {
     //either text is empty or does not exist in the object (false)
     if (props.phonetic.text === "" || "text" in props.phonetic === false) {
       //return only the audio
+      audio = new Audio(props.phonetic.audio);
       return (
         <li>
-          <a
-            href={props.phonetic.audio}
-            target="_blank"
-            rel="noreferrer"
+          {"   "}
+          <button
+            className="phonetic-audio-bttn"
+            onClick={start}
           >
-            Listen
-          </a>
+            <img
+              className="phonetic-audio-icon"
+              src={audioIcon}
+              alt="Phonetic audio icon"
+            />
+          </button>
         </li>
       );
       //both audio & text is within object, return both
     } else if (props.phonetic.audio && props.phonetic.text) {
+      audio = new Audio(props.phonetic.audio);
       return (
         <div className="Phonetics">
           <li>
             {props.phonetic.text}{" "}
-            <a
-              href={props.phonetic.audio}
-              target="_blank"
-              rel="noreferrer"
+            <button
+              className="phonetic-audio-bttn"
+              onClick={start}
             >
-              Listen
-            </a>
+              <img
+                className="phonetic-audio-icon"
+                src={audioIcon}
+                alt="Phonetic audio icon"
+              />
+            </button>
           </li>
         </div>
       );
