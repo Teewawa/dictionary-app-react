@@ -16,7 +16,14 @@ export default function Dictionary() {
   function search(event) {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios
+      .get(apiUrl)
+      .then(handleResponse)
+      .catch(function () {
+        alert(
+          "Unable to define that word at this time. Please check the spelling or try another word. "
+        );
+      });
     event.target.reset();
   }
 
