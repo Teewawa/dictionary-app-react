@@ -21,7 +21,7 @@ export default function Dictionary() {
       .then(handleResponse)
       .catch(function () {
         alert(
-          "Unable to define that word at this time. Please check the spelling or try another word. "
+          "Unable to define that word at this time. Please check the spelling or try another word. We apologize for any inconvenience. "
         );
       });
     event.target.reset();
