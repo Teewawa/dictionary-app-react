@@ -10,22 +10,24 @@ function App() {
         </header>
         <Dictionary default="search" />
         <footer className="App-footer">
-          This project was coded by{" "}
-          <a
-            href="https://www.linkedin.com/in/tiaramendiola/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Tiara Mendiola
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/Teewawa/react-weather"
-            target="_blank"
-            rel="noreferrer"
-          >
-            open-sourced.
-          </a>
+          <span>
+            This project was coded by{" "}
+            <a
+              href="https://www.linkedin.com/in/tiaramendiola/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Tiara Mendiola
+            </a>{" "}
+            and is{" "}
+            <a
+              href="https://github.com/Teewawa/react-weather"
+              target="_blank"
+              rel="noreferrer"
+            >
+              open-sourced.
+            </a>
+          </span>
         </footer>
       </div>
     </div>
