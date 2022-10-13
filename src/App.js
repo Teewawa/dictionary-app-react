@@ -8,7 +8,7 @@ function App() {
         <header className="App-header">
           <h1>Dictionary</h1>
         </header>
-        <Dictionary />
+        <Dictionary default="search" />
         <footer className="App-footer">
           This project was coded by{" "}
           <a
