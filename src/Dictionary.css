@@ -1,28 +1,64 @@
 .Dictionary {
-  background-color: rgb(203, 184, 151);
-  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
+.Dictionary form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Dictionary input::placeholder {
+  color: rgba(231, 215, 194, 0.4);
+  color: rgba(196, 179, 146, 0.56);
+}
+
+.Dictionary form input {
+  background-color: rgba(39, 39, 39, 0.7);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+  color: rgb(231, 215, 194);
+  border-radius: 2px;
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.Dictionary form input:focus {
+  background-color: rgb(39, 39, 39, 0.6);
+  color: rgb(231, 215, 194);
+}
+
+section {
+  /*border: 1px solid #20212433;*/
+  background-color: rgba(39, 39, 39, 0.6);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.679);
+  border-radius: 2px;
+  padding: 20px;
+  margin: 10px;
+}
+
 .Results {
-  border: 1px solid #20212433;
-  padding: 10px;
   margin-top: 40px;
+  color: #d4cfc1;
+  color: rgb(231, 215, 194);
 }
 
 .Results h3 {
-  color: rgba(196, 179, 146, 0.878);
+  color: red;
   margin-bottom: 25px;
   font-size: 20px;
 }
 
 .Meaning {
-  color: #202124;
+  color: rgb(196, 179, 146);
+  color: #ae8b70;
 }
+
 .Examples {
-  color: #70757ad7;
+  color: #d4cfc1;
 }
 
 .synonym-box {
-  background-color: rgba(196, 179, 146, 0.176);
+  background-color: rgba(231, 215, 194, 0.676);
+  color: white;
   border-radius: 10px;
   padding: 1px 20px;
   margin-right: 5px;

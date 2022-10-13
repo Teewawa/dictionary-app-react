@@ -12,7 +12,7 @@ export default function Phonetics(props) {
   //either audio is empty or does not exist in the object (false)
   if (props.phonetic.audio === "" || "audio" in props.phonetic === false) {
     //return only the text
-    return <li>{props.phonetic.text}</li>;
+    return <li class="phonetic-text">{props.phonetic.text}</li>;
   } else {
     //either text is empty or does not exist in the object (false)
     if (props.phonetic.text === "" || "text" in props.phonetic === false) {
@@ -39,7 +39,7 @@ export default function Phonetics(props) {
       return (
         <div className="Phonetics">
           <li>
-            {props.phonetic.text}{" "}
+            <span class="phonetic-text">{props.phonetic.text}</span>{" "}
             <button
               className="phonetic-audio-bttn"
               onClick={start}
