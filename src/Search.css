@@ -1,0 +1,97 @@
+.Dictionary {
+  margin: 0 auto;
+}
+
+.Dictionary form {
+  display: block;
+}
+
+.Dictionary .search-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  position: relative;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.Dictionary .search-bar {
+  background-color: rgba(39, 39, 39, 0.7);
+  color: rgb(231, 215, 194);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+  border: 0.5px solid rgba(30, 30, 30, 0.525);
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  line-height: 1.5;
+  padding: 6px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 600px;
+}
+
+.Dictionary .search-bttn {
+  background-color: rgb(175, 128, 79);
+  color: rgb(255, 198, 153);
+  color: rgb(225, 194, 154);
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-align: center;
+  padding: 5px;
+  width: 30px;
+}
+
+.Dictionary input::placeholder {
+  color: rgba(231, 215, 194, 0.488);
+  color: rgb(225, 194, 154, 0.4);
+}
+
+.Dictionary form input[type="search"]:focus {
+  background-color: rgb(39, 39, 39, 0.6);
+  color: rgb(231, 215, 194);
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: 0.5px solid white;
+}
+
+section {
+  /*border: 1px solid #20212433;*/
+  background-color: rgba(30, 30, 30, 0.63);
+  box-shadow: 10px 10px 10px rgba(14, 14, 14, 0.948);
+  border-radius: 2px;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.Results {
+  margin-top: 40px;
+  color: #d4cfc1;
+  color: rgb(231, 215, 194);
+}
+
+.Results h3 {
+  color: red;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.Meaning {
+  color: rgb(196, 179, 146);
+  color: #ae8b70;
+}
+
+.Examples {
+  color: #d4cfc1;
+}
+
+.synonym-box {
+  background-color: rgba(231, 215, 194, 0.676);
+  color: white;
+  border-radius: 10px;
+  padding: 1px 20px;
+  margin-right: 5px;
+  text-align: center;
+}
