@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.default);
@@ -45,13 +47,21 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <form onSubmit={search}>
-          <input
-            type="search"
-            autoFocus={true}
-            className="form-control"
-            placeholder="Search for a word"
-            onChange={handleKeywordChange}
-          />
+          <div className="search-container">
+            <input
+              type="search"
+              autoFocus={true}
+              className="search-bar"
+              placeholder="Search for a word"
+              onChange={handleKeywordChange}
+            />
+            <button className="search-bttn">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                size="lg"
+              />
+            </button>
+          </div>
         </form>
         <Results results={results} />
       </div>
@@ -60,13 +70,21 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <form onSubmit={search}>
-          <input
-            type="search"
-            autoFocus={true}
-            className="form-control"
-            placeholder="Search for a word"
-            onChange={handleKeywordChange}
-          />
+          <div className="search-container">
+            <input
+              type="search"
+              autoFocus={true}
+              className="search-bar"
+              placeholder="Search for a word"
+              onChange={handleKeywordChange}
+            />
+            <button className="search-bttn">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                size="lg"
+              />
+            </button>
+          </div>
         </form>
         <Results results={results} />
       </div>
