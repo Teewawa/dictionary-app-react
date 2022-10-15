@@ -1,0 +1,18 @@
+li {
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.phonetic-text {
+  color: rgb(175, 128, 79);
+}
+button {
+  all: unset;
+}
+.phonetic-audio-bttn {
+  color: rgb(225, 194, 154);
+}
+.phonetic-audio-bttn:hover {
+  color: rgb(225, 194, 154, 0.4);
+  color: rgba(231, 215, 194, 0.488);
+}
