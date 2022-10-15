@@ -1,10 +1,10 @@
 li {
-  line-height: 26px;
-  font-size: 18px;
+  line-height: 27px;
 }
 
 .phonetic-text {
   color: rgb(175, 128, 79);
+  font-size: 20px;
 }
 button {
   all: unset;
