@@ -1,7 +1,7 @@
 import React from "react";
-import "../src/css/Dictionary.css";
-import Phonetics from "./component/Phonetics";
-import Definitions from "./component/Definitions";
+import "../css/Dictionary.css";
+import Phonetics from "./Phonetics";
+import Definitions from "./Definitions";
 
 export default function Dictionary(props) {
   if (props.data) {
