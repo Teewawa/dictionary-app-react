@@ -16,3 +16,22 @@ button {
   color: rgb(225, 194, 154, 0.4);
   color: rgba(231, 215, 194, 0.488);
 }
+
+@media (max-width: 420px) {
+  .phonetic-text {
+    font-size: 18px;
+  }
+
+  .Dictionary ol {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .phonetic-text {
+    font-size: 16px;
+  }
+  .Dictionary ol {
+    padding-left: 1.2rem;
+  }
+}

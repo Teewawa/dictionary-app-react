@@ -9,3 +9,31 @@
   margin-bottom: 10px;
   font-size: 20px;
 }
+
+@media (max-width: 420px) {
+  .Definitions .definitions-text {
+    font-size: 18px;
+  }
+
+  .Definitions ol {
+    padding-left: 1.5rem;
+  }
+
+  .Definitions h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 330px) {
+  .Definitions .definitions-text {
+    font-size: 16px;
+  }
+
+  .Dictionary ol {
+    padding-left: 1.2rem;
+  }
+
+  .Definitions h3 {
+    font-size: 24px;
+  }
+}
