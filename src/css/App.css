@@ -3,7 +3,8 @@
 }
 
 .App-header h1 {
-  color: rgb(231, 215, 194);
+  color: rgb(241, 194, 147);
+  color: rgb(175, 128, 79);
   font-size: 70px;
   text-align: center;
 }
@@ -28,5 +29,5 @@
 .App-footer a:hover {
   text-decoration: underline;
   color: rgb(231, 215, 194);
-  color: #bb9679;
+  color: rgb(187, 150, 121);
 }
