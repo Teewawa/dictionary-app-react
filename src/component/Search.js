@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/Search.css";
+import "../css/Search.css";
 import axios from "axios";
 import Dictionary from "./Dictionary";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
