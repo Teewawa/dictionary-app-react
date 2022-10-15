@@ -1,0 +1,26 @@
+.Dictionary {
+  margin-top: 40px;
+  color: #d4cfc1;
+  color: rgb(231, 215, 194);
+}
+
+.Dictionary h2 {
+  color: rgb(175, 128, 79);
+  color: rgb(225, 194, 154);
+  font-size: 40px;
+}
+
+.Dictionary section {
+  /*border: 1px solid #20212433;*/
+  background-color: rgba(30, 30, 30, 0.63);
+  box-shadow: 0 10px 10px rgba(14, 14, 14, 0.948);
+  border-radius: 3px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 900px;
+}
+
+.Dictionary ol {
+  padding-left: 20px;
+}
