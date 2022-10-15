@@ -1,0 +1,10 @@
+.Definitions h3 {
+  color: rgb(225, 194, 154);
+  font-size: 28px;
+}
+
+.Definitions .definitions-text {
+  color: rgb(175, 128, 79);
+  line-height: 28px;
+  margin-bottom: 10px;
+}
