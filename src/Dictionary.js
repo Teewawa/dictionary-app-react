@@ -1,18 +1,18 @@
 import React from "react";
-import "./Dictionary.css";
-import Meaning from "./Meaning";
-import Phonetics from "./Phonetics";
+import "../src/css/Dictionary.css";
+import Phonetics from "./component/Phonetics";
+import Definitions from "./component/Definitions";
 
-export default function Results(props) {
-  if (props.results) {
+export default function Dictionary(props) {
+  if (props.data) {
     return (
-      <div className="Results">
+      <div className="Dictionary">
         <section>
-          <h2>{props.results.word}</h2>
+          <h2>{props.data.word}</h2>
 
           {/*Looping through each phonetics: find audio & text */}
           <ol>
-            {props.results.phonetics.map(function (phonetic, index) {
+            {props.data.phonetics.map(function (phonetic, index) {
               return (
                 <div key={index}>
                   <Phonetics phonetic={phonetic} />
@@ -23,12 +23,12 @@ export default function Results(props) {
         </section>
 
         {/*Looping through each Part of Speech Meaning(definition) */}
-        {props.results.meanings.map(function (meaning, index) {
+        {props.data.meanings.map(function (definition, index) {
           if (index < 3) {
             return (
               <div key={index}>
                 <section>
-                  <Meaning meaning={meaning} />
+                  <Definitions partOfSpeechData={definition} />
                 </section>
               </div>
             );
