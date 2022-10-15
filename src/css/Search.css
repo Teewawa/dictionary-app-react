@@ -7,7 +7,6 @@
 }
 
 .Search .search-container {
-  max-width: 600px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -22,25 +21,25 @@
   color: rgb(231, 215, 194);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
   border: 0.5px solid rgba(30, 30, 30, 0.525);
-  border-radius: 2px;
+  border-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   line-height: 1.5;
   padding: 6px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: 600px;
+  width: 800px;
 }
 
 .Search .search-bttn {
   background-color: rgb(175, 128, 79);
   color: rgb(255, 198, 153);
   color: rgb(225, 194, 154);
-  border-radius: 2px;
+  border-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   text-align: center;
   padding: 5px;
-  width: 30px;
+  width: 50px;
 }
 
 .Search input::placeholder {
