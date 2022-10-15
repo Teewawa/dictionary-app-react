@@ -27,6 +27,10 @@
   .Dictionary h2 {
     font-size: 32px;
   }
+
+  .Dictionary section {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 330px) {
