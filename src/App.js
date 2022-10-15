@@ -1,5 +1,5 @@
 import "./css/App.css";
-import Search from "./Search";
+import Search from "./component/Search";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <header className="App-header">
           <h1>Dictionary</h1>
         </header>
-        <Search default="search" />
+        <Search default="hello" />
         <footer className="App-footer">
           <span>
             This project was coded by{" "}
