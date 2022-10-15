@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import "./Search.css";
+import "./css/Search.css";
 import axios from "axios";
-import Results from "./Results";
+import Dictionary from "./Dictionary";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-export default function Dictionary(props) {
+export default function Search(props) {
   let [keyword, setKeyword] = useState(props.default);
-  let [results, setResults] = useState(null);
+  let [data, setData] = useState(null);
   let [ready, setReady] = useState(false);
 
   //Display a default definition, keyword received as prop from App.js
@@ -18,7 +18,7 @@ export default function Dictionary(props) {
 
   function handleResponse(response) {
     console.log(response.data[0]);
-    setResults(response.data[0]);
+    setData(response.data[0]);
   }
 
   //documentation: https://dictionaryapi.dev/s
@@ -44,31 +44,10 @@ export default function Dictionary(props) {
   if (ready === false) {
     displayDefault();
     setReady(true);
-    return (
-      <div className="Dictionary">
-        <form onSubmit={search}>
-          <div className="search-container">
-            <input
-              type="search"
-              autoFocus={true}
-              className="search-bar"
-              placeholder="Search for a word"
-              onChange={handleKeywordChange}
-            />
-            <button className="search-bttn">
-              <FontAwesomeIcon
-                icon={faMagnifyingGlass}
-                size="lg"
-              />
-            </button>
-          </div>
-        </form>
-        <Results results={results} />
-      </div>
-    );
+    return null;
   } else {
     return (
-      <div className="Dictionary">
+      <div className="Search">
         <form onSubmit={search}>
           <div className="search-container">
             <input
@@ -86,7 +65,7 @@ export default function Dictionary(props) {
             </button>
           </div>
         </form>
-        <Results results={results} />
+        <Dictionary data={data} />
       </div>
     );
   }
