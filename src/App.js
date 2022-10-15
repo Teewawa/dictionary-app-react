@@ -1,5 +1,5 @@
-import "./App.css";
-import Dictionary from "./Dictionary";
+import "./css/App.css";
+import Search from "./Search";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <header className="App-header">
           <h1>Dictionary</h1>
         </header>
-        <Dictionary default="search" />
+        <Search default="search" />
         <footer className="App-footer">
           <span>
             This project was coded by{" "}
