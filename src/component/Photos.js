@@ -3,7 +3,7 @@ import "../css/Photos.css";
 
 export default function Photos(props) {
   if (props.photos) {
-    console.log(props.photos);
+    //  console.log(props.photos);
     return (
       <div className="Photos">
         <section>
