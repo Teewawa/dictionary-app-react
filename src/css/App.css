@@ -9,11 +9,16 @@
   text-align: center;
 }
 
+.App footer section {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 950px;
+}
+
 .App-footer {
-  color: #bb9679;
   color: rgb(231, 215, 194);
   text-align: center;
-  margin: 0 0 30px 0;
 }
 
 .App-footer span {
@@ -22,13 +27,11 @@
 
 .App-footer a {
   text-decoration: none;
-  color: rgb(231, 215, 194);
   color: #bb9679;
 }
 
 .App-footer a:hover {
   text-decoration: underline;
-  color: rgb(231, 215, 194);
   color: rgb(187, 150, 121);
 }
 
