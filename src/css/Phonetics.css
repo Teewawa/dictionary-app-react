@@ -13,7 +13,6 @@ button {
   color: rgb(225, 194, 154);
 }
 .phonetic-audio-bttn:hover {
-  color: rgb(225, 194, 154, 0.4);
   color: rgba(231, 215, 194, 0.488);
 }
 
