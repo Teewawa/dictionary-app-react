@@ -1,5 +1,5 @@
 .Synonyms {
-  font-size: 18px;
+  font-size: 16px;
 }
 .Synonyms em {
   color: rgb(225, 194, 154);
@@ -15,5 +15,5 @@
   margin-right: 7px;
   text-align: center;
   height: 26px;
-  line-height: 26px;
+  line-height: 1.5;
 }

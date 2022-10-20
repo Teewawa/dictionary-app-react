@@ -1,6 +1,8 @@
 .Dictionary h2 {
   color: rgb(225, 194, 154);
-  font-size: 40px;
+  font-size: 50px;
+
+  font-family: "Cormorant Garamond", serif;
 }
 
 .Dictionary section {
@@ -15,9 +17,13 @@
   max-width: 950px;
 }
 
+.Dictionary ol {
+  padding: 0 !important;
+}
+
 @media (max-width: 420px) {
   .Dictionary h2 {
-    font-size: 32px;
+    font-size: 48px;
   }
 
   .Dictionary section {
@@ -27,6 +33,6 @@
 
 @media (max-width: 330px) {
   .Dictionary h2 {
-    font-size: 28px;
+    font-size: 40px;
   }
 }

@@ -1,13 +1,19 @@
 .Definitions h3 {
   color: rgb(225, 194, 154);
-  font-size: 28px;
+  font-size: 34px;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .Definitions .definitions-text {
   color: rgb(175, 128, 79);
-  line-height: 28px;
+  line-height: 1.5;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Definitions ol {
+  padding-left: 1.5rem !important;
 }
 
 @media (max-width: 420px) {
@@ -16,11 +22,11 @@
   }
 
   .Definitions ol {
-    padding-left: 1.5rem;
+    padding-left: 1.5rem !important;
   }
 
   .Definitions h3 {
-    font-size: 26px;
+    font-size: 34px;
   }
 }
 
@@ -34,6 +40,6 @@
   }
 
   .Definitions h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
 }

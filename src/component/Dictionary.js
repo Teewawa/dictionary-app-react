@@ -11,7 +11,7 @@ export default function Dictionary(props) {
           <h2>{props.data.word}</h2>
 
           {/*Looping through each phonetics: find audio & text */}
-          <ol>
+          <ol className="phonetics-list">
             {props.data.phonetics.map(function (phonetic, index) {
               return (
                 <div key={index}>
