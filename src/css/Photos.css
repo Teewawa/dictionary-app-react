@@ -4,7 +4,7 @@
 .Photos section {
   background-color: rgba(30, 30, 30, 0.63);
   border: 1px solid rgba(30, 30, 30, 0.725);
-  box-shadow: 0 6px 10px rgb(8, 8, 8);
+  box-shadow: 0 3px 5px rgba(49, 25, 1, 0.669);
   border-radius: 3px;
   padding: 4px 15px;
   margin: 0 auto;
