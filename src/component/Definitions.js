@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Definitions.css";
-import Examples from "../component/Examples";
-import Synonyms from "../component/Synonyms";
+import Examples from "./Examples";
+import Synonyms from "./Synonyms";
 
 export default function Definitions(props) {
   return (
