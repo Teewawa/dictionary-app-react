@@ -11,7 +11,6 @@ export default function Search(props) {
   let [data, setData] = useState(null);
   let [ready, setReady] = useState(false);
   let [photos, setPhotos] = useState(null);
-  let [flag, setFlag] = useState(false);
 
   function handleResponse(response) {
     //console.log(response.data[0]);
