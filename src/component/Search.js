@@ -11,14 +11,16 @@ export default function Search(props) {
   let [data, setData] = useState(null);
   let [ready, setReady] = useState(false);
   let [photos, setPhotos] = useState(null);
+  let [flag, setFlag] = useState(false);
 
   function handleResponse(response) {
     //console.log(response.data[0]);
     setData(response.data[0]);
+    searchForPhotos();
   }
 
   function handlePexelsResponse(response) {
-    console.log(response);
+    //console.log(response);
     setPhotos(response.data.photos);
   }
 
@@ -39,12 +41,11 @@ export default function Search(props) {
     axios
       .get(apiUrl)
       .then(handleResponse)
-      .catch(function () {
+      .catch(function (error) {
         alert(
           "Unable to define that word at this time. Please check the spelling or try another word. We apologize for any inconvenience. "
         );
       });
-    searchForPhotos();
     event.target.reset();
   }
 
