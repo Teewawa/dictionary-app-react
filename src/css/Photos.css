@@ -17,3 +17,9 @@
 .Photos img {
   border-radius: 1px;
 }
+
+@media (max-width: 420px) {
+  .Photos {
+    margin-top: 20px;
+  }
+}

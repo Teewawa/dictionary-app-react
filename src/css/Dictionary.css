@@ -16,10 +16,6 @@
 }
 
 @media (max-width: 420px) {
-  .Dictionary {
-    margin-top: 20px;
-  }
-
   .Dictionary h2 {
     font-size: 32px;
   }
