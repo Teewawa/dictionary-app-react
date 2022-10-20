@@ -1,7 +1,3 @@
-.Dictionary {
-  margin-top: 50px;
-}
-
 .Dictionary h2 {
   color: rgb(225, 194, 154);
   font-size: 40px;
@@ -11,12 +7,12 @@
   /*border: 1px solid #20212433;*/
   background-color: rgba(30, 30, 30, 0.63);
   border: 1px solid rgba(30, 30, 30, 0.725);
-  box-shadow: 0 6px 10px rgb(8, 8, 8);
+  box-shadow: 0 6px 10px rgb(11, 8, 5);
   border-radius: 3px;
   padding: 20px;
   margin: 0 auto;
   margin-top: 10px;
-  max-width: 900px;
+  max-width: 950px;
 }
 
 @media (max-width: 420px) {
