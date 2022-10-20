@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/Search.css";
 import axios from "axios";
 import Dictionary from "./Dictionary";
+import Photos from "./Photos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,16 +10,26 @@ export default function Search(props) {
   let [keyword, setKeyword] = useState(props.default);
   let [data, setData] = useState(null);
   let [ready, setReady] = useState(false);
-
-  //Display a default definition, keyword received as prop from App.js
-  function displayDefault() {
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
-  }
+  let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    //console.log(response.data[0]);
     setData(response.data[0]);
+  }
+
+  function handlePexelsResponse(response) {
+    console.log(response);
+    setPhotos(response.data.photos);
+  }
+
+  //documentation: https://www.pexels.com/api/documentation/
+  function searchForPhotos() {
+    let pexelsApiKey =
+      "563492ad6f9170000100000115e1fd75bf2b4754a12f3433f87b6133";
+    let pexelsEndpoint = "https://api.pexels.com/v1/search?query=";
+    let pexelsApiUrl = `${pexelsEndpoint}${keyword}&per_page=3`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
   //documentation: https://dictionaryapi.dev/s
@@ -33,11 +44,19 @@ export default function Search(props) {
           "Unable to define that word at this time. Please check the spelling or try another word. We apologize for any inconvenience. "
         );
       });
+    searchForPhotos();
     event.target.reset();
   }
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
+  }
+
+  //Display a default definition, keyword received as prop from App.js
+  function displayDefault() {
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
+    searchForPhotos();
   }
 
   //Conditional Rendering to prevent repeated API call on initial search
@@ -65,6 +84,11 @@ export default function Search(props) {
             </button>
           </div>
         </form>
+        <section>
+          <em className="suggested-words">Example: book, sunset, kitten... </em>
+        </section>
+
+        <Photos photos={photos} />
         <Dictionary data={data} />
       </div>
     );
